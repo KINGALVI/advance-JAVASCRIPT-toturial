@@ -48,15 +48,6 @@ for (const li of querySelectorAllCollection) {
     // console.log(li);
 }
 
-const sections = document.querySelectorAll('section');
-
-for (const section of sections) {
-    section.style.border = '5px solid red';
-    section.style.margin = '10px';
-    section.style.borderRadius = '10px';
-    section.style.backgroundColor = 'lightgray';
-}
-
 //যদি আমরা CSS এর কেবল মাত্র একটি class বা id পেতে চাই তাহলে সে ক্ষত্রে JavaScript এর ব্যবহার ।
-const querySelectorCollection = document.querySelector('.place-container li').innerHTML = 'ALVI'
-console.log(querySelectorCollection)
+const querySelectorCollection = document.querySelector('.places-container li').innerHTML = 'ALVI';
+// console.log(querySelectorCollection)
