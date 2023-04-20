@@ -8,11 +8,25 @@ for (const tag of tagCollection) {
 
 
 //// ২। JavaScript এ যদি আমারা কোন একটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByid() ব্যবহার করতে হবে ।
+
+const idCollection = document.getElementById('Fruits-title')[0];
+
 const idCollection1 = document.getElementById('Fruits-title').innerText = 'Fruits changed by JavaSript';
 
 const idCollection2 = document.getElementById('Fruits-title').innerHTML = '<h5>Fruits changed by JavaSript</h5>'
 
 const idCollection3 = document.getElementById('Fruits-title').style.backgroundColor = 'yellow';
+
+const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
+
+const idCollection5 = document.getElementById('Fruits-title').setAttribute('ALVI');
+
+const idCollection6 = document.getElementById('Fruits-title').classList
+.remove('')
+
+const idCollection7 = document.getElementById('Fruits-title').classList.replace('')
+
+const idCollection8 = document.getElementById('Fruits-title').classList.add('')
 
 
 //// ৩। JavaScript এ যদি আমারা কয়েকটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByClassName() ব্যবহার করতে হবে । 
