@@ -7,6 +7,9 @@ for (const tag of tagCollection) {
 }
 
 
+
+
+
 //// ২। JavaScript এ যদি আমারা কোন একটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByid() ব্যবহার করতে হবে ।
 
 const idCollection = document.getElementById('Fruits-title')[0];
@@ -17,16 +20,19 @@ const idCollection2 = document.getElementById('Fruits-title').innerHTML = '<h5>F
 
 const idCollection3 = document.getElementById('Fruits-title').style.backgroundColor = 'yellow';
 
-// const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
+const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
 
-// const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
+const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
 
-// const idCollection6 = document.getElementById('Fruits-title').classList
-// .remove('o');
+const idCollection6 = document.getElementById('Fruits-title').classList
+.remove('o');
 
-// const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
+const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
 
-// const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
+const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
+
+
+
 
 
 //// ৩। JavaScript এ যদি আমারা কয়েকটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByClassName() ব্যবহার করতে হবে । 
@@ -36,6 +42,9 @@ const classNameCollection = document.getElementsByClassName('impontant-places');
 for (const className of classNameCollection) {
     // console.log(className.innerText);
 }
+
+
+
 
 
 //// ৪। JavaScript এ যদি আমারা CSS এর class কিনবা id এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.querySelectorAll() এবং document.querySelector() ব্যবহার করতে হবে ।
@@ -51,6 +60,9 @@ for (const li of querySelectorAllCollection) {
 //যদি আমরা CSS এর কেবল মাত্র একটি class বা id পেতে চাই তাহলে সে ক্ষত্রে JavaScript এর ব্যবহার ।
 const querySelectorCollection = document.querySelector('#places-container li').innerHTML = 'ALVI';
 // console.log(querySelectorCollection)
+
+
+
 
 
 //// ৫। JavaScript দিয়ে যদি কোন HTML এর Element তৈরি করতে চাই । তাহলে সে ক্ষত্রে document.createElement() ব্যবহার করতে হবে । 
