@@ -22,3 +22,27 @@ for (const section of sections) {
 
 const placesContainer = document.getElementById('places-container');
 placesContainer.classList.add('yellow-bg');
+
+
+
+
+
+
+
+
+
+
+// best example of create Element and appendChild : add a section in main list .
+const mainContainer = document.getElementById('main-container');
+
+const createElement = document.createElement('section');
+createElement.innerHTML = `           
+<h1> countrys i like to visit </h1>
+<ul>
+    <li> Bangladesh</li>
+    <li> Turkey </li>
+    <li> Canada </li>
+</ul>
+`
+
+const mainChild = mainContainer.appendChild(createElement);
