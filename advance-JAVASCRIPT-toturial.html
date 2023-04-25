@@ -46,7 +46,16 @@
         <!-- HTML এ onclick="" এর ব্যবহার । -->
 
         <section>
+            <!-- Option that we will not use -->
             <button onclick="console.log('The Button Was Clicked !!')">Click Me</button>
+            <!-- Option that we will rearly use -->
+            <button id="Make-Green">Make Green</button>
+            <button onclick="document.body.style.backgroundColor='blue'">Make Blue</button>
+
+            <!-- Option that we will use most -->
+            <button onclick="MakeRed()">Make Red</button>
+
+
         </section>
 
     </main>

@@ -20,16 +20,18 @@ const idCollection2 = document.getElementById('Fruits-title').innerHTML = '<h5>F
 
 const idCollection3 = document.getElementById('Fruits-title').style.backgroundColor = 'yellow';
 
-// const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
+//
 
-// const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
+const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
 
-// const idCollection6 = document.getElementById('Fruits-title').classList
-// .remove('o');
+const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
 
-// const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
+const idCollection6 = document.getElementById('Fruits-title').classList
+.remove('o');
 
-// const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
+const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
+
+const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
 
 
 
@@ -81,3 +83,22 @@ const appendChildCollection = document.getElementById('append-Child')
 appendChildCollection.appendChild(elementCollection1);
 
 appendChildCollection.appendChild(elementCollection2);
+
+
+
+
+
+//// ৬। JavaScript এর মাধ্যমে function লিখে HTML button এর onclick="" এর ব্যবহার কিভাবে করা যায় তা দেখানো হয়েছে ।
+
+//Option that we will will rearly use 
+const makeGreen = document.getElementById('Make-Green');
+makeGreen.onclick = MakeGreen;
+
+function MakeGreen(){
+    document.body.style.backgroundColor = 'Green';
+}
+
+//Option that we will use most 
+function MakeRed(){
+    document.body.style.backgroundColor='Red';
+}
