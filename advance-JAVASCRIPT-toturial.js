@@ -20,16 +20,16 @@ const idCollection2 = document.getElementById('Fruits-title').innerHTML = '<h5>F
 
 const idCollection3 = document.getElementById('Fruits-title').style.backgroundColor = 'yellow';
 
-const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
+// const idCollection4 = document.getElementById('Fruits-title').getAttribute('class');
 
-const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
+// const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
 
-const idCollection6 = document.getElementById('Fruits-title').classList
-.remove('o');
+// const idCollection6 = document.getElementById('Fruits-title').classList
+// .remove('o');
 
-const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
+// const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
 
-const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
+// const idCollection8 = document.getElementById('Fruits-title').classList.add('o');
 
 
 
