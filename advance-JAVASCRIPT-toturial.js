@@ -27,7 +27,7 @@ const idCollection4 = document.getElementById('Fruits-title').getAttribute('clas
 const idCollection5 = document.getElementById('Fruits-title').setAttribute('attribute', 'ALVI');
 
 const idCollection6 = document.getElementById('Fruits-title').classList
-.remove('o');
+    .remove('o');
 
 const idCollection7 = document.getElementById('Fruits-title').classList.replace('o', 'o');
 
@@ -94,11 +94,46 @@ appendChildCollection.appendChild(elementCollection2);
 const makeGreen = document.getElementById('Make-Green');
 makeGreen.onclick = MakeGreen;
 
-function MakeGreen(){
+function MakeGreen() {
     document.body.style.backgroundColor = 'Green';
 }
 
 //Option that we will use most 
-function MakeRed(){
-    document.body.style.backgroundColor='Red';
+function MakeRed() {
+    document.body.style.backgroundColor = 'Red';
+}
+
+
+
+
+
+//// ৭। JavaScript এ HTML এর কোন button এ addEventListener() ব্যবহার করে কিভাবে সেই button কে কিভাবে কার্যকরি করা যায় তা দেখানো হয়েছে ।
+
+// Option we will use most
+document.getElementById('Make-White').addEventListener('click' ,
+
+function MakeWhite() {
+    document.body.style.backgroundColor = 'white';
+}
+
+)
+
+// Option we will use rearly  
+const makePurple = document.getElementById('Make-Purple');
+
+makePurple.addEventListener('click', 
+
+function MakePurple() {
+    document.body.style.backgroundColor = 'purple';
+}
+
+);
+
+
+// Option we will not use that much
+const makeYellow = document.getElementById('Make-Yellow');
+makeYellow.addEventListener('click', MakeYellow);
+
+function MakeYellow() {
+    document.body.style.backgroundColor = 'Yellow';
 }

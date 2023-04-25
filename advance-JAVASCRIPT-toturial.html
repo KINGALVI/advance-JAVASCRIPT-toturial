@@ -46,22 +46,30 @@
         <!-- HTML এ onclick="" এর ব্যবহার । -->
 
         <section>
-            <!-- Option that we will not use -->
+            <!-- Option that we will not use in oneclick -->
             <button onclick="console.log('The Button Was Clicked !!')">Click Me</button>
-            <!-- Option that we will rearly use -->
+
+            <!-- Option that we will rearly use in oneclick -->
             <button id="Make-Green">Make Green</button>
             <button onclick="document.body.style.backgroundColor='blue'">Make Blue</button>
 
-            <!-- Option that we will use most -->
+            <!-- Option that we will likely use in oneclick -->
             <button onclick="MakeRed()">Make Red</button>
 
+            <!-- Option we will use most in addEventListener -->
+            <button id="Make-White">Make white</button>
 
+            <!-- Option we will use rearly in addEventListener -->
+            <button id="Make-Purple">Make Purple</button>
+
+            <!-- Option that we will not use that much addEventListener -->
+            <button id="Make-Yellow">Make Yellow</button>
         </section>
 
     </main>
 
-    <script src="alvi.js"></script>
     <script src="advance-JAVASCRIPT-toturial.js"></script>
+    <script src="alvi.js"></script>
 
 </body>
 
