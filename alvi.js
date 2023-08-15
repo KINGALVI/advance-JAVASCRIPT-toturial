@@ -84,3 +84,25 @@ document.getElementById('update-input').addEventListener('click', function(){
   updatedInputText.innerText = inputText;
   inputField.value = '';
 })
+
+
+
+
+
+
+
+
+
+
+// advance update text using input
+
+document.getElementById('input-btn').addEventListener('click',function(){
+    const bigInputField = document.getElementById('comment-field');
+    const bigInputText = bigInputField.value;
+ const commentBox = document.getElementById('comment-box')
+    const commentField = document.createElement('p');
+    commentField.innerText=bigInputText;
+    commentBox.appendChild(commentField);
+    bigInputField.value = '';
+
+})

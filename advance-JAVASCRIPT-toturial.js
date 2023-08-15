@@ -110,22 +110,22 @@ function MakeRed() {
 //// ৭। JavaScript এ HTML এর কোন button এ addEventListener() ব্যবহার করে কিভাবে সেই button কে কিভাবে কার্যকরি করা যায় তা দেখানো হয়েছে ।
 
 // Option we will use most
-document.getElementById('Make-White').addEventListener('click' ,
+document.getElementById('Make-White').addEventListener('click',
 
-function MakeWhite() {
-    document.body.style.backgroundColor = 'white';
-}
+    function MakeWhite() {
+        document.body.style.backgroundColor = 'white';
+    }
 
 )
 
 // Option we will use rearly  
 const makePurple = document.getElementById('Make-Purple');
 
-makePurple.addEventListener('click', 
+makePurple.addEventListener('click',
 
-function MakePurple() {
-    document.body.style.backgroundColor = 'purple';
-}
+    function MakePurple() {
+        document.body.style.backgroundColor = 'purple';
+    }
 
 );
 
@@ -137,3 +137,36 @@ makeYellow.addEventListener('click', MakeYellow);
 function MakeYellow() {
     document.body.style.backgroundColor = 'Yellow';
 }
+
+
+
+
+
+//৮। key board এর key type কে count করার জন্য এই পদ্ধতি ব্যবহার করা হয় ।
+document.getElementById('keyword').addEventListener('keyup', function (even) {
+    console.log(even.target.value);
+})
+
+
+
+
+
+//৯। javascripr এর সাহ্যযে কোন লেখা gitHub এর মত করে Delete করার পদ্ধতি ।
+document.getElementById('delete-btn').addEventListener('click', function () {
+    const deletedText = document.getElementById('delete-text');
+    deletedText.style.display = 'none';
+})
+
+document.getElementById('text-input').addEventListener('keyup', function (event) {
+    const text = event.target.value;
+
+    const deleteButton = document.getElementById('delete-btn')
+
+    if (text === 'delete') {
+        deleteButton.removeAttribute('disabled');
+    }
+    else {
+        deleteButton.setAttribute('disabled', true)
+    }
+
+})
