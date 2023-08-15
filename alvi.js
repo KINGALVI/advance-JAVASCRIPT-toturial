@@ -65,3 +65,22 @@ document.getElementById('text-change-two').addEventListener('click',function(){
     const handeralstatustwo = document.getElementById('text-change-one')
     handeralstatustwo.innerText = 'my text is change !!'
 })
+
+
+
+
+
+
+
+
+
+
+// update text using input 
+
+document.getElementById('update-input').addEventListener('click', function(){
+  const inputField =  document.getElementById('input-field')
+  const inputText = inputField.value;
+  const updatedInputText = document.getElementById('update-input-text');
+  updatedInputText.innerText = inputText;
+  inputField.value = '';
+})
