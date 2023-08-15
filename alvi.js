@@ -46,3 +46,22 @@ createElement.innerHTML = `
 `
 
 const mainChild = mainContainer.appendChild(createElement);
+
+
+
+
+
+
+
+
+
+
+function handelclick(){
+    const handeralstatusone = document.getElementById('text-change-one');
+    handeralstatusone.innerText = 'the text is change !!'
+}
+
+document.getElementById('text-change-two').addEventListener('click',function(){
+    const handeralstatustwo = document.getElementById('text-change-one')
+    handeralstatustwo.innerText = 'my text is change !!'
+})
