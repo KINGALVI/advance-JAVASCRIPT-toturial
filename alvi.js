@@ -56,12 +56,12 @@ const mainChild = mainContainer.appendChild(createElement);
 
 
 
-function handelclick(){
+function handelclick() {
     const handeralstatusone = document.getElementById('text-change-one');
     handeralstatusone.innerText = 'the text is change !!'
 }
 
-document.getElementById('text-change-two').addEventListener('click',function(){
+document.getElementById('text-change-two').addEventListener('click', function () {
     const handeralstatustwo = document.getElementById('text-change-one')
     handeralstatustwo.innerText = 'my text is change !!'
 })
@@ -77,12 +77,12 @@ document.getElementById('text-change-two').addEventListener('click',function(){
 
 // update text using input 
 
-document.getElementById('update-input').addEventListener('click', function(){
-  const inputField =  document.getElementById('input-field')
-  const inputText = inputField.value;
-  const updatedInputText = document.getElementById('update-input-text');
-  updatedInputText.innerText = inputText;
-  inputField.value = '';
+document.getElementById('update-input').addEventListener('click', function () {
+    const inputField = document.getElementById('input-field')
+    const inputText = inputField.value;
+    const updatedInputText = document.getElementById('update-input-text');
+    updatedInputText.innerText = inputText;
+    inputField.value = '';
 })
 
 
@@ -96,13 +96,39 @@ document.getElementById('update-input').addEventListener('click', function(){
 
 // advance update text using input
 
-document.getElementById('input-btn').addEventListener('click',function(){
+document.getElementById('input-btn').addEventListener('click', function () {
     const bigInputField = document.getElementById('comment-field');
     const bigInputText = bigInputField.value;
- const commentBox = document.getElementById('comment-box')
+    const commentBox = document.getElementById('comment-box')
     const commentField = document.createElement('p');
-    commentField.innerText=bigInputText;
+    commentField.innerText = bigInputText;
     commentBox.appendChild(commentField);
     bigInputField.value = '';
 
+})
+
+
+
+
+
+
+
+
+
+
+// eaxmple of add nvew element and remove useing javascript
+
+document.getElementById('item-container').addEventListener('click', function(event){
+    // event.target.parentNode.removeChild(event.target);
+    if(event.target.classList.contains('item')){
+    event.target.parentNode.removeChild(event.target);
+    }
+})
+
+document.getElementById('add-new-item').addEventListener('click', function () {
+const parentContainer = document.getElementById('item-container')
+const newLi = document.createElement('li');
+newLi.classList.add('item');
+newLi.innerText = 'lorem';
+parentContainer.appendChild(newLi);
 })

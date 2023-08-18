@@ -176,15 +176,15 @@ document.getElementById('text-input').addEventListener('keyup', function (event)
 
 
 //Event Bubble এর ব্যবহার ।
-document.getElementById('containar').addEventListener('click', function(){
+document.getElementById('containar').addEventListener('click', function () {
     console.log('continer clicked');
 })
 
-document.getElementById('package').addEventListener('click',function(){
+document.getElementById('package').addEventListener('click', function () {
     console.log('pakage clicked');
 })
 
-document.getElementById('item-1').addEventListener('click', function(){
+document.getElementById('item-1').addEventListener('click', function () {
     console.log('item-1 clicked');
 })
 
@@ -194,40 +194,53 @@ document.getElementById('item-1').addEventListener('click', function(){
 
 
 //Event Bubble বন্ধ করার পদ্ধতি । 
-document.getElementById('containars').addEventListener('click', function(){
+document.getElementById('containars').addEventListener('click', function () {
     console.log('continer clicked');
 })
 
-document.getElementById('packages').addEventListener('click',function(){
+document.getElementById('packages').addEventListener('click', function () {
     console.log('pakage clicked');
 })
 
 
 //normal stopPropagation
-document.getElementById('items-1').addEventListener('click', function(Event){
+document.getElementById('items-1').addEventListener('click', function (Event) {
     console.log('item-1 clicked');
     Event.stopPropagation();
 })
 
 
 //advance stopPropagation সব গুলোর মধ্যে মাত্র একটা দেখাবে ।
-document.getElementById('items-2').addEventListener('click', function(Event){
+document.getElementById('items-2').addEventListener('click', function (Event) {
     console.log('item-2 frist clicked');
     Event.stopImmediatePropagation()
 })
 
-document.getElementById('items-2').addEventListener('click', function(){
+document.getElementById('items-2').addEventListener('click', function () {
     console.log('item-2 secoend clicked');
 })
 
-document.getElementById('items-2').addEventListener('click', function(){
+document.getElementById('items-2').addEventListener('click', function () {
     console.log('item-2 third clicked');
 })
 
-document.getElementById('items-2').addEventListener('click', function(){
+document.getElementById('items-2').addEventListener('click', function () {
     console.log('item-2 forth clicked');
 })
 
-document.getElementById('items-2').addEventListener('click', function(){
+document.getElementById('items-2').addEventListener('click', function () {
     console.log('item-2 fith clicked');
 })
+
+
+
+
+
+// কোন parent container থেকে কোন child remove করর পদ্ধতি ।
+
+const products = document.getElementsByClassName('item')
+for (container of products) {
+    container.addEventListener('click', function (event) {
+        event.target.parentNode.removeChild(event.target);
+    })
+}
