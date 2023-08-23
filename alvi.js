@@ -118,21 +118,21 @@ document.getElementById('input-btn').addEventListener('click', function () {
 
 // eaxmple of add nvew element and remove useing javascript
 
-document.getElementById('item-container').addEventListener('click', function(event){
+document.getElementById('item-container').addEventListener('click', function (event) {
 
     // event.target.parentNode.removeChild(event.target);
 
     // if you want to avoid the error = ' TypeError: Cannot read properties of null (reading 'removeChild') ' then use the method to remove child from parent .
-    if(event.target.classList.contains('item')){
-    event.target.parentNode.removeChild(event.target);
+    if (event.target.classList.contains('item')) {
+        event.target.parentNode.removeChild(event.target);
     }
-    
+
 })
 
 document.getElementById('add-new-item').addEventListener('click', function () {
-const parentContainer = document.getElementById('item-container')
-const newLi = document.createElement('li');
-newLi.classList.add('item');
-newLi.innerText = 'lorem';
-parentContainer.appendChild(newLi);
+    const parentContainer = document.getElementById('item-container')
+    const newLi = document.createElement('li');
+    newLi.classList.add('item');
+    newLi.innerText = 'lorem';
+    parentContainer.appendChild(newLi);
 })
