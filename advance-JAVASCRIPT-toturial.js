@@ -254,6 +254,36 @@ const math = (first , secoend) =>{
     const alvi = first + secoend;
     return alvi;
   }
-  
+
   const result = math(50 , 50);
   console.log(result)
+
+
+
+
+
+//JAVASCRIPT এ Array এর ভিতরে থাকা number বা string কে বের করে আনার জন্য কিনবা number বা string এর সামনে আথবা পিছনে
+const Digit0 = [2, 3, 4, 5];
+console.log( ...Digit0);
+
+const Digit1 = [12, 13, 14, 15];
+const Digits1 = [ 12 , ...Digit1 , 13, 14]
+console.log(Digits1);
+
+
+
+
+//JAVASCRIPT এ Array এর ভিতরে থাকা number বা string থেকে কোন কিছু বের করা বা যোগ করা জন্য push এবং pop এর ব্যবহার ।
+const Digit2 = [12, 13, 14, 15]
+Digit2.push(55)
+Digit2.pop()
+console.log(Digit2)
+
+const Digit3 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+const Digit4 = [...Digit3];
+Digit3.push(100, 200)
+Digit3.pop()
+Digit4.push(100, 200, 300)
+Digit4.pop()
+console.log(Digit3);
+console.log(Digit4);
