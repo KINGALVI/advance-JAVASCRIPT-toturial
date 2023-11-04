@@ -136,3 +136,39 @@ document.getElementById('add-new-item').addEventListener('click', function () {
     newLi.innerText = 'lorem';
     parentContainer.appendChild(newLi);
 })
+
+
+
+
+
+
+
+
+
+
+// example of useing CSS and HTML inside JAVASCRIPT 
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const applyBackground = document.getElementsByClassName('friend');
+    for (const applyBg of applyBackground) {
+        applyBg.style.backgroundColor = "red";
+    }
+    const button1 = document.getElementById('alvi')
+    button1.style.backgroundColor = 'green'
+
+    const button2 = document.getElementById('al')
+    button2.style.backgroundColor = 'blue'
+})
+
+let alvi = 5;
+document.getElementById('add-btn').addEventListener('click', function () {
+    alvi ++;
+    const section = document.getElementById('section');
+    const createElement = document.createElement('div')
+    createElement.innerHTML = `
+    <div class="friend">
+    <h3 class="friend-name">friend-${alvi}</h3>
+    <p>Quibusdam velit nihil tenetur quam.</p>
+    </div>
+    `
+    section.appendChild(createElement);
+});

@@ -244,3 +244,16 @@ for (container of products) {
         event.target.parentNode.removeChild(event.target);
     })
 }
+
+
+
+
+
+// JAVASCRIPT এ Arrow Function লিখার পদ্ধতি ।
+const math = (first , secoend) =>{
+    const alvi = first + secoend;
+    return alvi;
+  }
+  
+  const result = math(50 , 50);
+  console.log(result)
