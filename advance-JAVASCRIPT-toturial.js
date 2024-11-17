@@ -629,4 +629,18 @@ console.log(value)
 
 
 
+
+
+
+
+
+// ২৩। JAVASCRIPT এ if else এর সংক্ষিপ্ত রুপ দেখানো হলো । 
+
+const money = 80;
+let food = money>100 ? "birani" : "cha biscuit";
+console.log(food)
+
+
+
+
                                               // advance-JAVASCRIPT-Toturial-END //
