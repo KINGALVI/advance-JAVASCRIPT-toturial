@@ -10,6 +10,11 @@ for (const tag of tagCollection) {
 
 
 
+
+
+
+
+
 //// ২। JavaScript এ যদি আমারা কোন একটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByid() ব্যবহার করতে হবে ।
 
 const idCollection = document.getElementById('Fruits-title')[0];
@@ -37,6 +42,11 @@ const idCollection8 = document.getElementById('Fruits-title').classList.add('o')
 
 
 
+
+
+
+
+
 //// ৩। JavaScript এ যদি আমারা কয়েকটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByClassName() ব্যবহার করতে হবে । 
 const classNameCollection = document.getElementsByClassName('impontant-places');
      console.log(classNameCollection);
@@ -44,6 +54,11 @@ const classNameCollection = document.getElementsByClassName('impontant-places');
 for (const className of classNameCollection) {
      console.log(className.innerText);
 }
+
+
+
+
+
 
 
 
@@ -62,6 +77,11 @@ for (const li of querySelectorAllCollection) {
 //যদি আমরা CSS এর কেবল মাত্র একটি class বা id পেতে চাই তাহলে সে ক্ষত্রে JavaScript এর ব্যবহার ।
 const querySelectorCollection = document.querySelector('#places-container li').innerHTML = 'ALVI';
      console.log(querySelectorCollection)
+
+
+
+
+
 
 
 
@@ -88,6 +108,11 @@ appendChildCollection.appendChild(elementCollection2);
 
 
 
+
+
+
+
+
 //// ৬। JavaScript এর মাধ্যমে function লিখে HTML button এর onclick="" এর ব্যবহার কিভাবে করা যায় তা দেখানো হয়েছে ।
 
 //Option that we will will rearly use 
@@ -102,6 +127,11 @@ function MakeGreen() {
 function MakeRed() {
     document.body.style.backgroundColor = 'Red';
 }
+
+
+
+
+
 
 
 
@@ -142,7 +172,12 @@ function MakeYellow() {
 
 
 
-//৮। key board এর key type কে count করার জন্য এই পদ্ধতি ব্যবহার করা হয় ।
+
+
+
+
+
+//// ৮। key board এর key type কে count করার জন্য এই পদ্ধতি ব্যবহার করা হয় ।
 document.getElementById('keyword').addEventListener('keyup', function (even) {
     console.log(even.target.value);
 })
@@ -151,7 +186,12 @@ document.getElementById('keyword').addEventListener('keyup', function (even) {
 
 
 
-//৯। javascripr এর সাহ্যযে কোন লেখা gitHub এর মত করে Delete করার পদ্ধতি ।
+
+
+
+
+
+//// ৯। javascripr এর সাহ্যযে কোন লেখা gitHub এর মত করে Delete করার পদ্ধতি ।
 document.getElementById('delete-btn').addEventListener('click', function () {
     const deletedText = document.getElementById('delete-text');
     deletedText.style.display = 'none';
@@ -175,7 +215,7 @@ document.getElementById('text-input').addEventListener('keyup', function (event)
 
 
 
-//Event Bubble এর ব্যবহার ।
+//// ১০। Event Bubble এর ব্যবহার ।
 document.getElementById('containar').addEventListener('click', function () {
     console.log('continer clicked');
 })
@@ -190,9 +230,6 @@ document.getElementById('item-1').addEventListener('click', function () {
 
 
 
-
-
-
 //Event Bubble বন্ধ করার পদ্ধতি । 
 document.getElementById('containars').addEventListener('click', function () {
     console.log('continer clicked');
@@ -203,7 +240,14 @@ document.getElementById('packages').addEventListener('click', function () {
 })
 
 
-//normal stopPropagation
+
+
+
+
+
+
+
+//// ১১। normal stopPropagation
 document.getElementById('items-1').addEventListener('click', function (Event) {
     console.log('item-1 clicked');
     Event.stopPropagation();
@@ -236,7 +280,12 @@ document.getElementById('items-2').addEventListener('click', function () {
 
 
 
-// কোন parent container থেকে কোন child remove করর পদ্ধতি ।
+
+
+
+
+
+//// ১২। কোন parent container থেকে কোন child remove করর পদ্ধতি ।
 
 const products = document.getElementsByClassName('item')
 for (container of products) {
@@ -249,7 +298,12 @@ for (container of products) {
 
 
 
-// JAVASCRIPT এ Arrow Function লিখার পদ্ধতি ।
+
+
+
+
+
+//// ১৩। JAVASCRIPT এ Arrow Function লিখার পদ্ধতি ।
 const math = (first , secoend) =>{
     const alvi = first + secoend;
     return alvi;
@@ -262,7 +316,12 @@ const math = (first , secoend) =>{
 
 
 
-//JAVASCRIPT এ Array এর ভিতরে থাকা number বা string কে বের করে আনার জন্য কিনবা number বা string এর সামনে আথবা পিছনে
+
+
+
+
+
+//// ১৪JAVASCRIPT এ Array এর ভিতরে থাকা number বা string কে বের করে আনার জন্য কিনবা number বা string এর সামনে আথবা পিছনে
 const Digit0 = [2, 3, 4, 5];
 console.log( ...Digit0);
 
@@ -273,7 +332,12 @@ console.log(Digits1);
 
 
 
-//JAVASCRIPT এ Array এর ভিতরে থাকা number বা string থেকে কোন কিছু বের করা বা যোগ করা জন্য push এবং pop এর ব্যবহার ।
+
+
+
+
+
+//// ১৫। JAVASCRIPT এ Array এর ভিতরে থাকা number বা string থেকে কোন কিছু বের করা বা যোগ করা জন্য push এবং pop এর ব্যবহার ।
 const Digit2 = [12, 13, 14, 15]
 Digit2.push(55)
 Digit2.pop()
