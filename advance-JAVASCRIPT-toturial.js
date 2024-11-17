@@ -360,4 +360,273 @@ console.log(Digit4);
 
 
 
+
+
+
+
+// ১৬। Javascript এ যদি কোনো Function বা Program Browser এর ভিতরে Website Load হয়ে যাওয়ার কিছু সময় পর দেখাতে চায় তাহলে settimeout ব্যবহার করতে হবে ।
+
+setTimeout(() => {
+    console.log('Lazy Log')
+}, 3000)
+
+
+
+
+
+
+
+
+
+
+// ১৭। Javascript এ যদি কোনো Function বা Program Browser এর ভিতরে Website Load হয়ে যাওয়ার কিছু সময় পর পর দেখাতে চায় তাহলে setInterval ব্যবহার করতে হবে ।
+
+let number = 0;
+
+const ColckId = setInterval(() => {
+
+    number++;
+
+    if (number >= 5) {
+        clearInterval(ColckId);
+    }
+    console.log(ColckId, number);
+})
+
+
+
+
+
+
+
+
+
+
+// ১৮। Javascript এ try, catch, throw এবং finally ব্যবহার করে Error Handling করার পদ্ধতি ।
+
+document.getElementById('input-field-button').addEventListener('click', function () {
+    const inputField = document.getElementById('input-field');
+    const inputFieldText = inputField.value;
+    inputField.value = ''
+    const errorText = document.getElementById('error-text');
+
+
+    try {
+        const number = parseInt(inputFieldText);
+
+        if (isNaN(number)) {
+            throw 'Please Put Some Number !';
+        }
+
+        else if (number < 18) {
+            throw 'Kids Are Not Alowed !'
+        }
+
+        else if (number > 50) {
+            throw 'Old People Are Not Alowed !'
+        }
+        errorText.innerText = ''
+
+    }
+    catch (error) {
+        errorText.innerText = error;
+    }
+    finally {
+        setTimeout(() => {
+            alert('All Done Inside Try Catch');
+        }, 1000);
+    }
+})
+
+
+
+
+
+
+
+
+
+
+// ১৯। Browser এর ভিতরে থাকা Locl Stroage এ Javascript এর মাধ্যমে Data Store করার পদ্ধতি ।
+
+document.getElementById('add-product').addEventListener('click', function () {
+
+    const productNameInputField = document.getElementById('product-name');
+    const productNameInputFieldText = productNameInputField.value;
+    productNameInputField.value = ''
+
+    const productQuntityInputField = document.getElementById('product-quantuty');
+    const productQuntityInputFieldText = productQuntityInputField.value;
+    productQuntityInputField.value = ''
+
+    productList(productNameInputFieldText, productQuntityInputFieldText);
+
+    saveProductToShoppingStroage(productNameInputFieldText, productQuntityInputFieldText);
+
+})
+
+const productList = (Name, Quantuty) => {
+    const productListTable = document.getElementById('product-list');
+    const productList = document.createElement('h2');
+    productList.innerText = `${Name} : ${Quantuty}`;
+    productListTable.appendChild(productList);
+}
+
+const getStroredShoppingCart = () => {
+    let cart = {}
+    const getShoppingCart = localStorage.getItem('cart');
+    if (getShoppingCart) {
+        cart = JSON.parse(getShoppingCart);
+    }
+    return cart;
+}
+
+const saveProductToShoppingStroage = (Name, Quantuty) => {
+    const cart = getStroredShoppingCart();
+    cart[Name] = Quantuty;
+    const cartStringfy = JSON.stringify(cart);
+    localStorage.setItem('cart', cartStringfy);
+}
+
+const displayShoppingCart = () => {
+    const saveCart = getStroredShoppingCart();
+    for (const product in saveCart) {
+        const quantuty = saveCart[product];
+        productList(product, quantuty)
+    }
+}
+
+displayShoppingCart()
+
+
+
+
+
+
+
+
+
+
+
+// ২০। JAVASCRIPT এ Array methods (map, forEach, filter, find and includes ) এর ব্যবহার
+
+const products = [
+
+    { name: 'laptop', price: 3200, brand: 'lenovo', color: 'silver' },
+
+    { name: 'phone', price: 7000, brand: 'iphone', color: 'golden' },
+
+    { name: 'watch', price: 3000, brand: 'casio', color: 'yellow' },
+
+    { name: 'sungalss', price: 300, brand: 'ribon', color: 'black' },
+
+    { name: 'camera', price: 9000, brand: 'canon', color: 'gray' }
+
+];
+
+
+
+
+//// 1. Array ভিতরে কোনো নির্দিষ্ট Object এর Element খুজে পাওয়ার জন্য map() method এর ব্যবহার করতে হবে । map() method এর ফলাফল return হিসেবে Araay প্রদান করবে।
+
+const barands = products.map(product => product.brand)
+console.log(barands)
+
+
+
+
+//// 2. map() method এর মত Array ভিতরে কোনো নির্দিষ্ট Object এর Element খুজে পাওয়ার জন্য forEach() method এর ব্যবহার করতে হবে । তবে forEach() method এর ফলাফল return হিসেবে Araay প্রদান করবে না ।
+
+products.forEach(product => console.log(product.brand));
+
+
+
+
+//// 3. Array ভিতরে শর্ত সাপেক্ষে কোন নির্দিষ্ট Object এর Element পেতে চাইলে filter() method এর ব্যবহার করতে হবে । filter() method এর ফলাফল return হিসেবে Araay প্রদান করবে ।
+
+const cheapProducts = products.filter(product => product.price <= 5000);
+console.log(cheapProducts);
+
+// includes() ব্যবহার করে filter() method এর ব্যবহার । includes() ব্যবহার করা হয় মূলত নির্দিষ্ট চিহ্ন, সংখ্যা বা আক্ষর এর উপর ভিত্তি করে Object এর Element পাওযার জন্য ।
+
+const specificName = products.filter(product => product.name.includes('n'));
+console.log(specificName);
+
+
+
+
+//// 4. Array ভিতরে শর্ত সাপেক্ষে কোন নির্দিষ্ট Object এর সর্ব প্রথম Element পেতে চাইলে find() method এর ব্যবহার করতে হবে । find() method এর ফলাফল return হিসেবে Object প্রদান করবে ।
+
+const special = products.find(product => product.name.includes('n'));
+console.log(special);
+
+
+
+
+//// 5. পুরাতন Array সাথে নুতুন Array যুক্ত করতে চাইলে (...) method ব্যবহার করতে হবে ।
+const newProduct = { name: 'webcam', price: 500, brand: 'samsumg', color: 'red' }
+
+const newProducts = [...products, newProduct]
+console.log(newProducts);
+
+
+
+
+
+
+
+
+
+
+// ২১। JAVASCRIPT এ Array এবং object Destructuring কিভাবে করতে হয় তা দেখানো হয়েছে ।
+
+const studentInfo = {
+    student: "alvi",
+    age: 23,
+    tech: 'computer',
+    language: ['html', 'css', 'js'],
+    specification: {
+        hight: 66,
+        weignt: 67,
+        adress: "kumarkhali",
+        dirnk: "water"
+    }
+}
+
+const displayStudentInfo = studentInfo;
+console.log(displayStudentInfo);
+
+const [language] = [studentInfo.language];
+console.log(language)
+
+const { hight, weignt, adress, dirnk } = studentInfo.specification;
+console.log(hight, weignt, adress, dirnk)
+
+
+
+
+
+
+
+
+
+
+// ২২। Object এর ভিতরে যদি Object এর Key এবং value গুলো পেতে চাই , তাহলে Object.keys() method ব্যবহার করেতে হবে ।
+
+const object = { name: 'Telivision', price: 50000, brand: 'walton', color: 'black' };
+
+//// 1. Object এর ভিতরে যদি Object এর Keys গুলো পেতে চাই , তাহলে Object.keys() method ব্যবহার করেতে হবে ।
+
+const keys = Object.keys(object);
+console.log(keys);
+
+//// 2. Object এর ভিতরে যদি Object এর values গুলো পেতে চাই , তাহলে Object.vlues() method ব্যবহার করেতে হবে ।
+
+const value = Object.values(object)
+console.log(value)
+
+
+
+
+
                                               // advance-JAVASCRIPT-Toturial-END //
