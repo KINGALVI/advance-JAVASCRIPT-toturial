@@ -636,9 +636,19 @@ console.log(value)
 
 // ২৩। JAVASCRIPT এ if else এর সংক্ষিপ্ত রুপ দেখানো হলো । 
 
-const money = 80;
+
+//// 1. একটি শর্ত বিশিষ্ঠ if else এর একটি শর্ত সংক্ষিপ্ত রুপ হলো ঃ
+
+const money = 180;
 let food = money>100 ? "birani" : "cha biscuit";
 console.log(food)
+
+//// 2. একাধিক শর্ত বিশিষ্ঠ if else এর একটি শর্ত সংক্ষিপ্ত রুপ হলো ঃ
+
+const Money1 = 50;
+const Money2 = 50;
+let Food = (Money1>100 && Money2>100) ? "Mojo" : "mango biscuit";
+console.log(Food)
 
 
 
