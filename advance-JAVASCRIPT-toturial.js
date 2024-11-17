@@ -327,7 +327,7 @@ const math = (first , secoend) =>{
 
 
 
-//// ১৪JAVASCRIPT এ Array এর ভিতরে থাকা number বা string এর সামনে আথবা পিছনে নতুন করে number বা string যোগ করার জন্য (...) method ব্যবহার করতে হবে । 
+//// ১৪। JAVASCRIPT এ existing Array এর সাথে নুতুন Array যোগ করার জন্য (...) method ব্যবহার করতে হবে । 
 const Digit1 = [12, 13, 14, 15];
 const Digits1 = [ 12 , ...Digit1 , 13, 14]
 console.log(Digits1);
