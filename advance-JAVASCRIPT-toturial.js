@@ -1,3 +1,9 @@
+                                              // advance-JAVASCRIPT-Toturial-END //
+
+
+
+
+
 //// ১। JavaScript এ যদি আমারা কোন HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে  সে ক্ষেত্রে document.getElementsByTagName ব্যবহার করতে হবে ।
 const tagCollection = document.getElementsByTagName('body')
      console.log(tagCollection);
@@ -357,4 +363,4 @@ console.log(Digit4);
 
 
 
-                                              // advance JAVASCRIPT Toturial END //
+                                              // advance-JAVASCRIPT-Toturial-END //
