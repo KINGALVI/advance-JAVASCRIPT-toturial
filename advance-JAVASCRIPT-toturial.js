@@ -676,10 +676,11 @@ console.log(Food)
 
 //// 3. Function যুক্ত শর্ত বিশিষ্ঠ if else এর সংক্ষিপ্ত রুপ হলো ঃ
 
-const isActive = (true);
+let isActive = (true);
 const showUser = () => console.log('display User');
 const hideUser = () => console.log('hide User');
 isActive ? showUser() : hideUser();
+isActive = !isActive;
 
 
 
