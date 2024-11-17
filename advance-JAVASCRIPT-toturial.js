@@ -327,10 +327,7 @@ const math = (first , secoend) =>{
 
 
 
-//// ১৪JAVASCRIPT এ Array এর ভিতরে থাকা number বা string কে বের করে আনার জন্য কিনবা number বা string এর সামনে আথবা পিছনে
-const Digit0 = [2, 3, 4, 5];
-console.log( ...Digit0);
-
+//// ১৪JAVASCRIPT এ Array এর ভিতরে থাকা number বা string এর সামনে আথবা পিছনে নতুন করে number বা string যোগ করার জন্য (...) method ব্যবহার করতে হবে । 
 const Digit1 = [12, 13, 14, 15];
 const Digits1 = [ 12 , ...Digit1 , 13, 14]
 console.log(Digits1);
