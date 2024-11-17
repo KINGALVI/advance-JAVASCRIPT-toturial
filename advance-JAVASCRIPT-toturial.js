@@ -654,4 +654,35 @@ console.log(Food)
 
 
 
+
+
+
+
+
+// ২৩। JAVASCRIPT এ if else এর সংক্ষিপ্ত রুপ দেখানো হলো । 
+
+//// 1. Variable যুক্ত একটি শর্ত বিশিষ্ঠ if else এর সংক্ষিপ্ত রুপ হলো ঃ
+
+const money = 180;
+let food = money>100 ? "birani" : "cha biscuit";
+console.log(food)
+
+//// 2. Variable যুক্ত একাধিক শর্ত বিশিষ্ঠ if else এর সংক্ষিপ্ত রুপ হলো ঃ
+
+const Money1 = 50;
+const Money2 = 50;
+let Food = (Money1>100 && Money2>100) ? "Mojo" : "mango biscuit";
+console.log(Food)
+
+//// 3. Function যুক্ত শর্ত বিশিষ্ঠ if else এর সংক্ষিপ্ত রুপ হলো ঃ
+
+const isActive = (true);
+const showUser = () => console.log('display User');
+const hideUser = () => console.log('hide User');
+isActive ? showUser() : hideUser();
+
+
+
+
+
                                               // advance-JAVASCRIPT-Toturial-END //
