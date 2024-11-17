@@ -1,9 +1,9 @@
 //// ১। JavaScript এ যদি আমারা কোন HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে  সে ক্ষেত্রে document.getElementsByTagName ব্যবহার করতে হবে ।
 const tagCollection = document.getElementsByTagName('body')
-// console.log(tagCollection);
+     console.log(tagCollection);
 
 for (const tag of tagCollection) {
-    // console.log(tag);
+     console.log(tag);
 }
 
 
@@ -39,10 +39,10 @@ const idCollection8 = document.getElementById('Fruits-title').classList.add('o')
 
 //// ৩। JavaScript এ যদি আমারা কয়েকটা নিদিষ্ট HTML ট্যাগ এর অ্যাক্সেস পেতে চাই তাহলে সে ক্ষেত্রে document.getElementsByClassName() ব্যবহার করতে হবে । 
 const classNameCollection = document.getElementsByClassName('impontant-places');
-// console.log(classNameCollection);
+     console.log(classNameCollection);
 
 for (const className of classNameCollection) {
-    // console.log(className.innerText);
+     console.log(className.innerText);
 }
 
 
@@ -53,15 +53,15 @@ for (const className of classNameCollection) {
 
 //যদি আমরা CSS এর আনেকগুলো class বা id পেতে চাই তাহলে সে ক্ষত্রে JavaScript এর ব্যবহার ।
 const querySelectorAllCollection = document.querySelectorAll('.place-container li')
-// console.log(querySelectorAllCollection);
+     console.log(querySelectorAllCollection);
 
 for (const li of querySelectorAllCollection) {
-    // console.log(li);
+     console.log(li);
 }
 
 //যদি আমরা CSS এর কেবল মাত্র একটি class বা id পেতে চাই তাহলে সে ক্ষত্রে JavaScript এর ব্যবহার ।
 const querySelectorCollection = document.querySelector('#places-container li').innerHTML = 'ALVI';
-// console.log(querySelectorCollection)
+     console.log(querySelectorCollection)
 
 
 
@@ -74,8 +74,8 @@ elementCollection1.innerText = 'my name is alvi .';
 const elementCollection2 = document.createElement('li')
 elementCollection2.innerText = 'i am a web devoloper .';
 
-// console.log(elementCollection1);
-// console.log(elementCollection2)
+     console.log(elementCollection1);
+     console.log(elementCollection2)
 
 // JavaScript এর মাধ্যমে document.createElement() তৈরি করার পর যদি যদি সেই Element এর ভিতরে আরোও নুতুন কোন Element যোগ করতে চাই , তাহলে সে ক্ষত্রে .appendChild() ব্যবহার করতে হবে ।
 const appendChildCollection = document.getElementById('append-Child')
