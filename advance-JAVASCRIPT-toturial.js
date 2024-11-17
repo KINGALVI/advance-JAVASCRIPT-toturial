@@ -287,3 +287,10 @@ Digit4.push(100, 200, 300)
 Digit4.pop()
 console.log(Digit3);
 console.log(Digit4);
+
+
+
+
+
+
+                                              // advance JAVASCRIPT Toturial END //
