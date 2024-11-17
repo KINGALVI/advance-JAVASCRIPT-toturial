@@ -1,4 +1,4 @@
-                                              // advance-JAVASCRIPT-Toturial-END //
+                                              // advance-JAVASCRIPT-Toturial-start //
 
 
 
@@ -687,4 +687,4 @@ isActive = !isActive;
 
 
 
-                                              // advance-JAVASCRIPT-Toturial-END //
+                                              // advance-JAVASCRIPT-Toturial-end //
