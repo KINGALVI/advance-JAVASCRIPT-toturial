@@ -659,7 +659,8 @@ console.log(Food)
 
 
 
-// ২৩। JAVASCRIPT এ if else এর সংক্ষিপ্ত রুপ দেখানো হলো । 
+// ২৪। JAVASCRIPT এ if else এর সংক্ষিপ্ত রুপ দেখানো হলো । 
+
 
 //// 1. Variable যুক্ত একটি শর্ত বিশিষ্ঠ if else এর সংক্ষিপ্ত রুপ হলো ঃ
 
