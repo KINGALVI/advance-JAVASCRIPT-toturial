@@ -662,10 +662,10 @@ console.log(Food)
 //// 3. short verstion of else-if 
 
 let score = 85;
-let grade = (score >= 90) ? "A" :
-  (score >= 80) ? "B" : // if
-    (score >= 70) ? "C" : /* else-if */
-      (score >= 60) ? "D" : "F"; // else
+let grade = (score >= 90) ? "A" : // if
+            (score >= 80) ? "B" : /* else-if */
+            (score >= 70) ? "C" : /* else-if */
+            (score >= 60) ? "D" : "F"; // else
 console.log(grade);
 
 
