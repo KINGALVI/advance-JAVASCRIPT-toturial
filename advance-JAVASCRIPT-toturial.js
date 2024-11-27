@@ -665,8 +665,9 @@ let score = 85;
 let grade = (score >= 90) ? "A" :
   (score >= 80) ? "B" : // if
     (score >= 70) ? "C" : /* else-if */
-      (score >= 60) ? "D" /* else-if */ : "F"; // else
+      (score >= 60) ? "D" : "F"; // else
 console.log(grade);
+
 
 
 
