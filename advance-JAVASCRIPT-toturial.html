@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -16,7 +17,7 @@
     <main id="main-container">
 
         <section>
-            <h1> my Awesome DOM de baba </h1>
+            <h1> My Awesome DOM </h1>
             <ul>
                 <li> Jalali Set </li>
                 <li> Shafayet </li>
@@ -26,137 +27,125 @@
         </section>
 
         <section>
-            <h1 id="Fruits-title"> Fruits i like </h1>
+            <h1 id="Fruits-title"> Fruits I Like </h1>
             <ul>
-                <li class="impontant-places"> Apple </li>
-                <li class="impontant-places"> Banana </li>
-                <li class="impontant-places"> Carrot </li>
+                <li class="important-places"> Apple </li>
+                <li class="important-places"> Banana </li>
+                <li class="important-places"> Carrot </li>
             </ul>
         </section>
 
         <section id="places-container">
-            <h1> places i like to visit </h1>
+            <h1> Places I Like to Visit </h1>
             <ul id="append-Child">
-                <li> Soondarban </li>
-                <li> bandorban </li>
-                <li> shalbon </li>
+                <li> Sundarbans </li>
+                <li> Bandarban </li>
+                <li> Shalbon </li>
             </ul>
         </section>
 
-        <!-- HTML এ onclick="" এর ব্যবহার । -->
+
+
+
+
+        <!-- Usage of onclick in HTML -->
 
         <section>
-            <!-- Option that we will not use in oneclick -->
+            <!-- Option we rarely use in onclick -->
             <button onclick="console.log('The Button Was Clicked !!')">Click Me</button>
 
-            <!-- Option that we will rearly use in oneclick -->
+            <!-- Option we occasionally use in onclick -->
             <button id="Make-Green">Make Green</button>
             <button onclick="document.body.style.backgroundColor='blue'">Make Blue</button>
 
-            <!-- Option that we will likely use in oneclick -->
+            <!-- Option we frequently use in onclick -->
             <button onclick="MakeRed()">Make Red</button>
 
-            <!-- Option we will use most in addEventListener -->
-            <button id="Make-White">Make white</button>
+            <!-- Option we use most in addEventListener -->
+            <button id="Make-White">Make White</button>
 
-            <!-- Option we will use rearly in addEventListener -->
+            <!-- Option we occasionally use in addEventListener -->
             <button id="Make-Purple">Make Purple</button>
 
-            <!-- Option that we will not use that much addEventListener -->
+            <!-- Option we rarely use in addEventListener -->
             <button id="Make-Yellow">Make Yellow</button>
         </section>
 
-        <!-- practice part -->
+        <!-- Practice Part -->
 
-        <!-- 1st practice -->
+        <!-- First Practice -->
         <section>
-            <h1>final dom handlers</h1>
-            <h3 id="update-input-text">default input</h3>
+            <h1>Final DOM Handlers</h1>
+            <h3 id="update-input-text">Default Input</h3>
             <input id="input-field" type="text">
-            <button id="update-input">update</button>
-            <h3 id="text-change-one">default text</h3>
-            <button onclick='handelclick()'>click change using onclick</button>
-            <button id="text-change-two">click change using addEventListener</button>
+            <button id="update-input">Update</button>
+            <h3 id="text-change-one">Default Text</h3>
+            <button onclick="handleClick()">Click Change Using onclick</button>
+            <button id="text-change-two">Click Change Using addEventListener</button>
         </section>
 
-        <!-- 2nd practice -->
+        <!-- Second Practice -->
         <section>
             <div id="comment-box">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est consequuntur veniam, officia et
-                    dolor repudiandae quam, fuga asperiores laborum eos nihil natus temporibus quaerat id libero error
-                    itaque similique dolores hic, recusandae quae officiis quasi! Amet perferendis voluptatibus quae
-                    ipsam
-                    fugiat praesentium asperiores? Ullam non quam voluptatibus eum provident!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, hic. Quibusdam voluptatibus aperiam
-                    inventore repellat accusantium, aut quos dolores nemo! Dolores libero est inventore doloribus
-                    asperiores
-                    animi placeat, nulla provident nobis itaque eos cupiditate mollitia, obcaecati perspiciatis cumque?
-                    Impedit dolor labore id minima, beatae saepe vero ea nulla possimus sint.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fuga cum sequi inventore ad autem
-                    delectus libero magnam, beatae quis doloremque consectetur ducimus nihil. Praesentium rem, vero aut
-                    adipisci at ab provident? Ad placeat aliquam aperiam dolorum tenetur, nisi laboriosam molestias
-                    dolor
-                    animi incidunt vel. Quidem, debitis rerum. Doloremque, ratione?
-                </p>
+                <p>Example text for comment section.</p>
             </div>
-
-            <textarea name="" id="comment-field" cols="50" rows="5"></textarea>
+            <textarea id="comment-field" cols="50" rows="5"></textarea>
             <br>
-            <button id="input-btn">update</button>
+            <button id="input-btn">Update</button>
         </section>
 
         <section>
             <input id="keyword" type="text">
         </section>
 
-        <!-- HTML এ gitHub এর মত করে delete করার পদ্ধতি । -->
+
+
+
+
+        <!-- Deleting Like GitHub -->
         <section>
             <h1 id="delete-text">ALVI</h1>
             <input id="text-input" type="text">
-            <button id="delete-btn" disabled>delete</button>
+            <button id="delete-btn" disabled>Delete</button>
         </section>
 
-        <!-- Event Bubble এর ব্যবহার । -->
-        <section id="containar">
-            Event Bubble এর ব্যবহার ।
+
+
+
+
+        <!-- Usage of Event Bubbling -->
+        <section id="container">
+            Event Bubbling Example
             <ul id="package">
-                <li id="item-1">Lorem ipsum dolor sit amet.</li>
-                <li id="item-2">Quas ratione unde amet corrupti?</li>
-                <li id="item-3">Velit delectus nihil autem nam!</li>
-                <li id="item-4">Reprehenderit cumque omnis ea nesciunt.</li>
-                <li id="item-5">Odit, dolores vitae. Ipsa, aut.</li>
-                <li id="item-6">Ipsam dignissimos possimus adipisci recusandae!</li>
+                <li id="item-1">Example List Item 1</li>
+                <li id="item-2">Example List Item 2</li>
             </ul>
         </section>
 
-        <!-- Event Bubble বন্ধ করার পদ্ধতি । -->
-        <section id="containars">
-            Event Bubble বন্ধ করার পদ্ধতি ।
+
+
+
+
+        <!-- Preventing Event Bubbling -->
+        <section id="containers">
+            Preventing Event Bubbling Example
             <ul id="packages">
-                <li id="items-1">Lorem ipsum dolor sit amet.</li>
-                <li id="items-2">Quas ratione unde amet corrupti?</li>
-                <li id="items-3">Velit delectus nihil autem nam!</li>
-                <li id="items-4">Reprehenderit cumque omnis ea nesciunt.</li>
-                <li id="items-5">Odit, dolores vitae. Ipsa, aut.</li>
-                <li id="items-6">Ipsam dignissimos possimus adipisci recusandae!</li>
+                <li id="items-1">Example List Item 1</li>
+                <li id="items-2">Example List Item 2</li>
             </ul>
         </section>
-        <!--  কোন parent container থেকে কোন child remove এবং add করর পদ্ধতি । -->
+
+
+
+
+
+        <!-- Removing and Adding Child Elements in Parent Container -->
         <section>
             <ul id="item-container">
-                <li class="item">Lorem, ipsum.</li>
-                <li class="item">Facere, cum.</li>
-                <li class="item">At, ipsum.</li>
-                <li class="item">Nemo, dolorem.</li>
-                <li class="item">Nostrum, ab.</li>
-                <li class="item">Sequi, aliquid.</li>
+                <li class="item">Example 1</li>
+                <li class="item">Example 2</li>
             </ul>
-            <button id="add-new-item">add item</button>
+            <button id="add-new-item">Add Item</button>
         </section>
 
     </main>
